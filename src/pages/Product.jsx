@@ -2,9 +2,9 @@ import PageNav from "../components/PageNav";
 
 const Product = () => {
   return (
-    <main className="h-screen bg-slate-600">
+    <main className="h-screen bg-slate-700">
       <PageNav />
-      <section className=" w-[900px] mx-auto text-white flex flex-row justify-between my-14">
+      <section className=" w-[900px] mx-auto text-white flex flex-row justify-between my-24">
         <div className=" h-96">
           <img
             className="  h-full"
@@ -12,7 +12,7 @@ const Product = () => {
             alt="person with dog overlooking mountain with sunset"
           />
         </div>
-        <div className=" w-[420px] my-5">
+        <div className=" w-[420px] my-14">
           <h2 className="text-5xl"> About WorldWide.</h2>
           <p className="my-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est
