@@ -1,10 +1,11 @@
-import AppNav from "../components/AppNav";
+import Map from "../components/Map";
+import Sidebar from "../components/Sidebar";
 
 const AppLayout = () => {
   return (
-    <div>
-      <AppNav />
-      AppLayout
+    <div className="flex">
+      <Sidebar />
+      <Map />
     </div>
   );
 };
