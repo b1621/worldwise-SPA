@@ -1,14 +1,16 @@
 import Logo from "./Logo";
 import AppNav from "../components/AppNav";
+import { Outlet } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="w-80  h-screen bg-slate-700  text-white">
+    <div className="w-96  h-screen bg-slate-700  text-white">
       <div className="flex flex-col justify-between h-full p-5">
         <div>
           <Logo />
           <AppNav />
-          <p>List of Cities</p>
+
+          <Outlet />
         </div>
         <div>
           <footer>
