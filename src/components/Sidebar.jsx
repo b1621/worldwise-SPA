@@ -7,7 +7,10 @@ const Sidebar = () => {
     <div className="w-[500px]  h-screen bg-slate-800  text-white">
       <div className="flex flex-col justify-between h-full p-5">
         <div>
-          <Logo />
+          <div className=" ml-9">
+            <Logo />
+          </div>
+
           <AppNav />
 
           <Outlet />

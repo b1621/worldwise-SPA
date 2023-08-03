@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const AppNav = () => {
   return (
-    <div className="my-5">
+    <div className="my-10">
       <ul className="flex w-fit mx-auto">
         <li>
           <NavLink
