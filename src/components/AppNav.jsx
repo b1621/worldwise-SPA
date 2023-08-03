@@ -8,17 +8,17 @@ const AppNav = () => {
           <NavLink
             to="cities"
             className={({ isActive }) =>
-              isActive ? `bg-slate-800 px-4 py-1` : "bg-slate-600 px-4 py-1"
+              isActive ? `bg-slate-900 px-4 py-1` : "bg-slate-700 px-4 py-1"
             }
           >
             Cities
           </NavLink>
         </li>
-        <li>
+        <li className="border-l-2 border-slate-800 ">
           <NavLink
             to="countries"
             className={({ isActive }) =>
-              isActive ? `bg-slate-800 px-4 py-1` : "bg-slate-600 px-4 py-1"
+              isActive ? `bg-slate-900 px-4 py-1` : "bg-slate-700 px-4 py-1"
             }
           >
             Countries

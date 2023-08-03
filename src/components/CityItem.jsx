@@ -12,7 +12,7 @@ const CityItem = ({ city }) => {
     <li>
       <Link
         to={`${id}?lat=${position.lat}&lng=${position.lng}`}
-        className="flex justify-between bg-slate-600 my-3 px-3 py-2 rounded-md border-l-4 border-emerald-500"
+        className="flex justify-between bg-slate-700 my-3 px-3 py-2 rounded-md border-l-4 border-emerald-500"
       >
         <div>
           <h3>
