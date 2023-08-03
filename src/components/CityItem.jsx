@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
@@ -6,9 +7,10 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 const CityItem = ({ city }) => {
-  const { cityName, emoji, date } = city;
+  const { cityName, emoji, date,id } = city;
   return (
-    <li className="flex justify-between bg-slate-600 my-3 px-3 py-2 rounded-md border-l-4 border-emerald-500">
+    <li >
+      <Link to={`${id}`} className="flex justify-between bg-slate-600 my-3 px-3 py-2 rounded-md border-l-4 border-emerald-500" >
       <div>
         <h3>
           {" "}
@@ -21,6 +23,7 @@ const CityItem = ({ city }) => {
           &times;
         </button>
       </div>
+      </Link>
     </li>
   );
 };
