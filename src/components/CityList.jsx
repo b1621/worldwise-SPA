@@ -1,7 +1,9 @@
+import { useCities } from "../contexts/CitiesContext";
 import CityItem from "./CityItem";
 import Spinner from "./Spinner";
 
-const CityList = ({ cities, isLoading }) => {
+const CityList = () => {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
