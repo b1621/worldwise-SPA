@@ -1,5 +1,6 @@
 import { useCities } from "../contexts/CitiesContext";
 import CityItem from "./CityItem";
+import Message from "./Message";
 import Spinner from "./Spinner";
 
 const CityList = () => {
@@ -10,12 +11,11 @@ const CityList = () => {
 
   if (!cities.length) {
     return (
-      <div className=" my-14 mx-5">
-        <p className="text-center">
-          🖐 Add your first city by clicking on a city on the map
-        </p>
-      </div>
+      <Message message=" Add your first city by clicking on a city on the map" />
     );
+  }
+  {
+    isLoading && <Spinner />;
   }
   return (
     <ul>

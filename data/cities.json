@@ -37,16 +37,64 @@
       "id": 98443197
     },
     {
-      "cityName": "Nijar",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-04-03T07:47:59.202Z",
+      "cityName": "Idles",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-08-07T12:54:06.107Z",
+      "notes": "great country",
+      "position": {
+        "lat": "26.980828590472107",
+        "lng": "5.451118077006872"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Karu",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2023-08-07T12:56:48.311Z",
       "notes": "",
       "position": {
-        "lat": "36.967508314568164",
-        "lng": "-2.13128394200588"
+        "lat": "9.188870084473406",
+        "lng": "7.64965104653995"
       },
-      "id": 98443198
+      "id": 98443201
+    },
+    {
+      "cityName": "Idalou",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2023-08-07T12:59:28.358Z",
+      "notes": "",
+      "position": {
+        "lat": "33.687781758439364",
+        "lng": "-101.66672470896013"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Cernovice",
+      "country": "Czechia",
+      "emoji": "🇨🇿",
+      "date": "2023-08-07T13:05:46.333Z",
+      "notes": "",
+      "position": {
+        "lat": "49.37969064441394",
+        "lng": "15.004665981193927"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Odense",
+      "country": "Denmark",
+      "emoji": "🇩🇰",
+      "date": "2023-08-07T13:05:46.333Z",
+      "notes": "",
+      "position": {
+        "lat": "55.435246897869995",
+        "lng": "10.525370416330897"
+      },
+      "id": 98443204
     }
   ]
 }
