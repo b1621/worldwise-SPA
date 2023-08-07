@@ -10,12 +10,18 @@ import {
 import { useNavigate, useSearchParams } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import { useCities } from "../contexts/CitiesContext";
+import { useGeolocation } from "../hooks/useGeolocation";
 
 const Map = () => {
   const { cities } = useCities();
-
-  const [mapPosition, setMapPosition] = useState([40, 0]); // Destructure the array and get the first element (mapPosition)
+  const [mapPosition, setMapPosition] = useState([40, 0]);
   const [searchParams] = useSearchParams();
+  const {
+    isLoading: isLoadingPosition,
+    position: geolocationPosition,
+    getPosition,
+  } = useGeolocation();
+
   const mapLat = searchParams.get("lat");
   const mapLng = searchParams.get("lng");
 
@@ -25,13 +31,30 @@ const Map = () => {
     },
     [mapLat, mapLng]
   );
+
+  useEffect(
+    function () {
+      if (geolocationPosition)
+        setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+    },
+    [geolocationPosition]
+  );
+
   return (
-    <div className=" bg-slate-500 w-full">
+    <div className=" relative bg-slate-500 w-full">
+      {!geolocationPosition && (
+        <button
+          className=" absolute  right-20 z-50 top-10 px-5 py-1 bg-green-500 hover:bg-green-600 rounded-full"
+          onClick={getPosition}
+        >
+          {isLoadingPosition ? "Loading ..." : "Use your position"}
+        </button>
+      )}
       <MapContainer
         center={mapPosition}
         zoom={13}
         scrollWheelZoom={true}
-        className=" h-screen"
+        className=" h-screen z-10"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
