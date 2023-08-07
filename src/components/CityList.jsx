@@ -4,9 +4,11 @@ import Spinner from "./Spinner";
 
 const CityList = () => {
   const { cities, isLoading } = useCities();
-  if (isLoading) return <Spinner />;
+  // const cities = [];
+  // console.log("citylist componentt ,cities == ", cities);
+  // if (isLoading) return <Spinner />;
 
-  if (!cities.length)
+  if (!cities.length) {
     return (
       <div className=" my-14 mx-5">
         <p className="text-center">
@@ -14,10 +16,13 @@ const CityList = () => {
         </p>
       </div>
     );
+  }
   return (
     <ul>
       {cities.map((city) => (
-        <CityItem city={city} key={city.id} />
+        <>
+          <CityItem city={city} key={city.id} />
+        </>
       ))}
     </ul>
   );
