@@ -8,8 +8,13 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 const CityItem = ({ city }) => {
-  const { currentCity } = useCities();
+  const { currentCity, deleteCity } = useCities();
   const { cityName, emoji, date, id, position } = city;
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    deleteCity(id);
+  };
   return (
     <li>
       <Link
@@ -26,7 +31,10 @@ const CityItem = ({ city }) => {
         </div>
         <div>
           <time className="text-sm pt-1"> {formatDate(date)} </time>
-          <button className="ml-2 text-slate-300 hover:text-slate-900 text-lg">
+          <button
+            onClick={handleClick}
+            className="ml-2 text-slate-300 hover:text-slate-900 text-lg"
+          >
             &times;
           </button>
         </div>

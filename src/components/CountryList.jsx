@@ -4,6 +4,7 @@ import Spinner from "./Spinner";
 
 const CountryList = () => {
   const { cities, isLoading } = useCities();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
