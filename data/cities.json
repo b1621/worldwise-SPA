@@ -37,16 +37,40 @@
       "id": 98443203
     },
     {
-      "cityName": "Kolomna",
-      "country": "Russian Federation (the)",
-      "emoji": "🇷🇺",
-      "date": "2023-08-07T13:18:47.015Z",
+      "cityName": "Paris",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-07T14:56:11.999Z",
+      "notes": "ifletowr",
+      "position": {
+        "lat": "48.87194147722911",
+        "lng": "2.296450120398368"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Jimma",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "date": "2023-08-07T14:58:04.067Z",
       "notes": "",
       "position": {
-        "lat": "55.10822970202758",
-        "lng": "38.80653884080545"
+        "lat": "7.743651345263343",
+        "lng": "36.9471936320074"
       },
-      "id": 98443204
+      "id": 98443207
+    },
+    {
+      "cityName": "Jijiga",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "date": "2023-08-07T14:59:17.580Z",
+      "notes": "",
+      "position": {
+        "lat": "9.400290685848121",
+        "lng": "42.95106564649418"
+      },
+      "id": 98443208
     }
   ]
 }
