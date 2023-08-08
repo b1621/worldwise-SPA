@@ -25,30 +25,6 @@
       "id": 17806751
     },
     {
-      "cityName": "Cernovice",
-      "country": "Czechia",
-      "emoji": "🇨🇿",
-      "date": "2023-08-07T13:05:46.333Z",
-      "notes": "",
-      "position": {
-        "lat": "49.37969064441394",
-        "lng": "15.004665981193927"
-      },
-      "id": 98443203
-    },
-    {
-      "cityName": "Paris",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-08-07T14:56:11.999Z",
-      "notes": "ifletowr",
-      "position": {
-        "lat": "48.87194147722911",
-        "lng": "2.296450120398368"
-      },
-      "id": 98443206
-    },
-    {
       "cityName": "Jimma",
       "country": "Ethiopia",
       "emoji": "🇪🇹",
@@ -59,30 +35,6 @@
         "lng": "36.9471936320074"
       },
       "id": 98443207
-    },
-    {
-      "cityName": "Jijiga",
-      "country": "Ethiopia",
-      "emoji": "🇪🇹",
-      "date": "2023-08-07T14:59:17.580Z",
-      "notes": "",
-      "position": {
-        "lat": "9.400290685848121",
-        "lng": "42.95106564649418"
-      },
-      "id": 98443208
-    },
-    {
-      "cityName": "Fara",
-      "country": "Burkina Faso",
-      "emoji": "🇧🇫",
-      "date": "2023-08-08T07:54:28.606Z",
-      "notes": "",
-      "position": {
-        "lat": "11.545961968405738",
-        "lng": "-2.745262379684277"
-      },
-      "id": 98443209
     },
     {
       "cityName": "Catabola",
