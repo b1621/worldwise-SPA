@@ -23,7 +23,7 @@ const HomePage = () => {
           </h2>
 
           <Link
-            to="/app"
+            to="/login"
             className="  rounded-md px-5 py-2 text-black text-md font-normal shadow-md hover:bg-emerald-600 bg-emerald-500"
           >
             Start tracking now
