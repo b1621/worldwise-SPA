@@ -12,6 +12,7 @@ import "leaflet/dist/leaflet.css";
 import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import { useUrlPosition } from "../hooks/useUrlPosition";
+import User from "./User";
 
 const Map = () => {
   const { cities } = useCities();
@@ -47,7 +48,7 @@ const Map = () => {
     <div className=" relative bg-slate-500 w-full">
       {!geolocationPosition && (
         <button
-          className=" absolute  right-20 z-50 top-10 px-5 py-1 bg-green-500 hover:bg-green-600 rounded-full"
+          className=" absolute left-72  z-50 bottom-10 px-5 py-1 bg-green-500 shadow-md hover:bg-green-600 rounded-full"
           onClick={getPosition}
         >
           {isLoadingPosition ? "Loading ..." : "Use your position"}
